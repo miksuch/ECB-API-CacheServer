@@ -1,5 +1,7 @@
 # ECB-API-CacheServer
 
+Goal is to take data - exchange rate of currencies - from ECB and store and serve them through this server to improve performance ( maybe ).
+
 # Solution structure
 
 Based on https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/common-web-application-architectures#clean-architecture
