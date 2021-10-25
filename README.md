@@ -54,19 +54,19 @@ Checking if *IEcbClient* implementation ( and by dependency also *ISdmxXmlReader
 
 "Load tests" using k6 - basic scenarios - first time doing this anyway so I don't feel like I have expertise to know what to look for and what's relevant - in prepared scenarios I observed somewhat linear increase in request duration as more heavy tests are run.
 
-1vus - <4ms
-10vus - ~8ms
-50vus - ~15ms
-100vus - ~30ms
-250vus - ~66ms
+- 1vus - <4ms
+- 10vus - ~8ms
+- 50vus - ~15ms
+- 100vus - ~30ms
+- 250vus - ~66ms
 
 **Single requests at a time**
-when in favorable caching window:
-<3ms
-out of window:
-~30ms
-ecb:
-38-45ms
+- when in favorable caching window:
+  <3ms
+- out of window:
+  ~30ms
+- ecb: 
+  38-45ms
 
 **Known issues and notes**
 
