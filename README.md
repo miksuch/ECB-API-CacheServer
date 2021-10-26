@@ -77,3 +77,5 @@ Mixed concurrent and sequential code - most likely places where performance and 
 When running load test on fresh database concurrent conflicting inserts are running - lots of errors but it doesn't stop the server and data and server is fine after all.
 
 Many first attempts at - sdmx, k6, caching etc. . Not particurarly pleased by looking at results given that they're from calling local server but maybe it's good enough - not sure - I had an idea and I went with it, learned some things, would hopefully do better next time. I have not given myself a lot of time too I think, so stuff was mostly rushed in ( explains issues above ) but I didn't want to commit too much - life and other stuff to do. Also it was supposed to be "proof of concept" so that's something I kept in mind and so I guess I was more inclined to do things quick ...
+
+Should've done just ExchangeRate for every day ( instead of only when available ) with no value if no record was available and trust that, and then last available value would be easily fetched - smarter after the fact. CacheRecord was instead used to see if there are any gaps in available records.
